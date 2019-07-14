@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_phone_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_phone_value"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintStart_toStartOf="@+id/lbl_slack_value"
+                app:layout_constraintTop_toTopOf="@+id/tv_profile_phone" />
+
+            <TextView
+                android:id="@+id/tv_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/lbl_profile_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_profile"
+                tools:text="@string/lbl_profile_name" />
+
+            <TextView
+                android:id="@+id/tv_profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/lbl_email"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profile_country"
+                tools:text="@string/lbl_email" />
+
+            <TextView
+                android:id="@+id/lbl_email_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_email_value"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintStart_toStartOf="@+id/lbl_slack_value"
+                app:layout_constraintTop_toTopOf="@+id/tv_profile_email" />
+
+            <TextView
+                android:id="@+id/lbl_country_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_country_value"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintStart_toStartOf="@+id/lbl_slack_value"
+                app:layout_constraintTop_toTopOf="@+id/tv_profile_country" />
+
+            <TextView
+                android:id="@+id/tv_profile_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/lbl_phoneno"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profile_email"
+                tools:text="@string/lbl_phoneno" />
+
+            <TextView
+                android:id="@+id/lbl_track_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_track_value"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintStart_toStartOf="@+id/lbl_slack_value"
+                app:layout_constraintTop_toTopOf="@+id/tv_profile_track"
+                tools:text="@string/lbl_track_value" />
+
+            <TextView
+                android:id="@+id/tv_profile_slack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/lbl_slack"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profile_phone"
+                tools:text="@string/lbl_slack" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="395dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profile" />
+
+            <TextView
+                android:id="@+id/lbl_slack_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:text="@string/lbl_slack_value"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="italic"
+                app:layout_constraintStart_toEndOf="@+id/tv_profile_slack"
+                app:layout_constraintTop_toTopOf="@+id/tv_profile_slack" />
+
+            <TextView
+                android:id="@+id/tv_profile_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/lbl_country"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profile_track" />
+
+            <TextView
+                android:id="@+id/tv_profile_track"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/lbl_track"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider"
+                tools:text="@string/lbl_track" />
+
+            <ImageView
+                android:id="@+id/img_profile"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@string/desc_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/profile" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

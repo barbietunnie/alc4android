@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ALC 4 Phase 1</string>
+    <string name="activity_about">About ALC</string>
+    <string name="activity_profile">My Profile</string>
+    <string name="action_settings">Settings</string>
+    <string name="lbl_header">Welcome to ALC 4.0</string>
+    <string name="btn_about">About ALC</string>
+    <string name="btn_profile">My Profile</string>
+    <string name="lbl_profile_name">Babatunde Adeyemi</string>
+    <string name="lbl_track">Track:</string>
+    <string name="lbl_country">Country:</string>
+    <string name="lbl_email">Email:</string>
+    <string name="lbl_phoneno">Phone number:</string>
+    <string name="lbl_slack">Slack Username:</string>
+    <string name="lbl_track_value">Android</string>
+    <string name="lbl_country_value">Nigeria</string>
+    <string name="lbl_email_value">barbietunnie@gmail.com</string>
+    <string name="lbl_phone_value">2348099444327</string>
+    <string name="lbl_slack_value">\@barbietunnie</string>
+    <string name="desc_profile">Profile image</string>
+</resources>
